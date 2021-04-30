@@ -44,7 +44,7 @@ DARWIN:=$(findstring Darwin, $(shell uname -s))
 BUILD_CC ?= $(CLANG_BIN)clang
 BUILD_CXX ?= $(CLANG_BIN)clang++
 BUILD_AS ?= $(CLANG_BIN)clang
-BUILD_AR ?= $(CLANG_BIN)llvm-ar
+BUILD_AR ?= ar
 BUILD_LD ?= $(CLANG_BIN)ld
 LINKER ?= $(BUILD_CC)
 ifeq ($(HOST_ARCH), IA32)
