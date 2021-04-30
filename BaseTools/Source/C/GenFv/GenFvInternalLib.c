@@ -13,7 +13,7 @@ SPDX-License-Identifier: BSD-2-Clause-Patent
 // Include files
 //
 
-#if defined(__FreeBSD__)
+#if defined(__FreeBSD__) || defined(__OpenBSD__)
 #include <uuid.h>
 #elif defined(__GNUC__)
 #include <uuid/uuid.h>
